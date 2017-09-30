@@ -35,7 +35,8 @@ const HomePage = () =>(
 		</div>
 		<div className="one_section-wrap">
 				<div className="lblock">
-					<h3>About ikoi Spa</h3>
+					<h3>About<br/>ikoi Spa</h3>
+					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
 				</div>
 				<div className="rblock">
@@ -48,6 +49,7 @@ const HomePage = () =>(
 				</div>
 				<div className="rblock">
 					<h3>The Enzyme Spa</h3>
+					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
 					<buttom>learn more</buttom><br/>
 					<img alt="enzyme spa" src={EnzymeSpa}></img>
@@ -59,6 +61,7 @@ const HomePage = () =>(
 				</div>
 				<div className="rblock">
 					<h3>Bath Spa</h3>
+					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
 					<buttom>learn more</buttom><br/>
 					<img alt="enzyme spa" src={Bath}></img>
@@ -67,6 +70,7 @@ const HomePage = () =>(
 		<div className="one_section-wrap">
 				<div className="lblock">
 					<h3>Massage</h3>
+					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
 					<buttom>learn more</buttom><br/>
 					<img alt="enzyme spa" src={Massage}></img>
@@ -78,6 +82,7 @@ const HomePage = () =>(
 		<div className="one_section-wrap">
 				<div className="lblock">
 					<h3>Facial</h3>
+					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
 					<buttom>learn more</buttom><br/>
 					<img alt="enzyme spa" src={Facial}></img>
