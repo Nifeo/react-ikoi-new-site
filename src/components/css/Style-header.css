@@ -51,6 +51,7 @@ li{
 
 .middle_line{
 	text-decoration:line-through;
+	text-decoration-color:#d19e52;
 }
 
 .book_now{
@@ -63,7 +64,26 @@ li{
 	float:left;
 }
 
+.lblock p{
+	width:30em;
+}
+
 .rblock{
 	width:50%;
 	float:right;
 }
+
+.lblock_ot{
+	width:65%;
+	float:left;
+}
+
+.rblock_ot{
+	width:35%;
+	float:left;
+}
+
+.rblock_ot img{
+	margin-top:2em;
+}
+

@@ -1,11 +1,15 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
+import Carousel from './Carousel';
 import '../css/style-contents.css';
 import AboutImage from '../image/about-image.jpg';
 import EnzymeSpa from '../image/pimg.jpg';
 import Bath from '../image/bathspa-new.jpg';
 import Massage from '../image/massage.jpg';
 import Facial from '../image/facial.jpg';
+import Faiclogo from '../image/faiclogo.jpg';
+
+
 
 class Content extends React.Component{
 	render(){
@@ -24,6 +28,9 @@ const HomePage = () =>(
 			<div id="background_video-wrap">
 				<iframe id="video" src="https://youtube.com/embed/W2LH54fHkKo?loop=1&&autoplay=0&&controls=0&&showinfo=0&&playlist=W2LH54fHkKo" frameBorder="0"></iframe>
 			</div>
+			<div className="text-v_block_left">
+				<h5>ikoI JAPANESE DAY SPA</h5>
+			</div>
 			<div id="description-wrap">
 				<div id="description-div">
 					<h5>ikoi Enzyme therapy & Japanese day spa</h5>
@@ -38,32 +45,35 @@ const HomePage = () =>(
 					<h3>About<br/>ikoi Spa</h3>
 					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+					<buttom className="learn_more-but"><spam className="line_thought">&nbsp; </spam>learn more</buttom><br/>
 				</div>
 				<div className="rblock">
 					<img alt="about ikoi" src={AboutImage}></img>
 				</div>
 		</div>
 		<div className="one_section-wrap">
-				<div className="lblock">
+				<div className="lblock_ot">
+					<Carousel width={40} code={1} border_style="rt"/>
 					<buttom className="buttom_style1">Book now</buttom>
 				</div>
-				<div className="rblock">
+				<div className="rblock_ot">
 					<h3>The Enzyme Spa</h3>
 					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
-					<buttom>learn more</buttom><br/>
+					<buttom className="learn_more-but">learn more</buttom><br/>
 					<img alt="enzyme spa" src={EnzymeSpa}></img>
 				</div>
 		</div>	
 		<div className="one_section-wrap">
-				<div className="lblock">
-					<buttom className="buttom_style1">Book now</buttom>	
+				<div className="lblock_ot">
+					<Carousel width={40} code={2} border_style="rt" />
+					<buttom className="buttom_style1">Book now</buttom>
 				</div>
-				<div className="rblock">
+				<div className="rblock_ot">
 					<h3>Bath Spa</h3>
 					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
-					<buttom>learn more</buttom><br/>
+					<buttom className="learn_more-but">learn more</buttom><br/>
 					<img alt="enzyme spa" src={Bath}></img>
 				</div>
 		</div>
@@ -72,10 +82,11 @@ const HomePage = () =>(
 					<h3>Massage</h3>
 					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
-					<buttom>learn more</buttom><br/>
+					<buttom className="learn_more-but">learn more</buttom><br/>
 					<img alt="enzyme spa" src={Massage}></img>
 				</div>
 				<div className="rblock">
+					<Carousel width={40} code={2} border_style="lt"/>
 					<buttom className="buttom_style1">Book now</buttom>					
 				</div>
 		</div>
@@ -84,12 +95,29 @@ const HomePage = () =>(
 					<h3>Facial</h3>
 					<div className="underline"></div>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown unknown Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown</p>
-					<buttom>learn more</buttom><br/>
+					<buttom className="learn_more-but">learn more</buttom><br/>
 					<img alt="enzyme spa" src={Facial}></img>
 				</div>
 				<div className="rblock">
+					<Carousel width={40} code={2} border_style="lt"/>
+					<div>
 					<buttom className="buttom_style1">Book now</buttom>	
+					
+					</div>
 				</div>
+		</div>
+		<div className="one_section-wrap">
+			<div style={{"width":56+"em", "margin":"0 auto"}}>
+				<Carousel width={50} code={3} border_style="lt"/><br/>
+			</div>
+			<div style={{"width":51+"em", "margin":"0 auto"}}>
+				<img style={{"float":"left"}} alt="" src={Faiclogo}></img>
+				<div>
+					<h5>Enzyme Spa & Sothys Seasonal Facia</h5>
+					<p>It’s the tranquil Japanese atmosphere and specialised treatments that makes ikoi Spa different from the rest. We work with a wide range of health and beauty traditions and only use the highest quality products.</p>
+					<buttom className="view_detail-but">View Details</buttom><br/>
+				</div>
+			</div>
 		</div>
 	</div>
 )
