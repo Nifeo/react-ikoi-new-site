@@ -50,13 +50,13 @@ export default class Carousel extends React.Component{
 		return(
 			<div className="carousel_wrapper">			
 				<div className ={border} style={{width:viewpoint_width+'em'}}>
-				<div className = {viewPoint} style={{width:viewpoint_width+'em'}}>
-					<div onMouseOverCapture = {this.onMouseOver} onMouseLeave={this.onMouseLeave}  className="carousel-div" style={{width:carousel_width_div+'em'}}>
-						<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
-						<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
-						<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+					<div className = {viewPoint} style={{width:viewpoint_width+'em'}}>
+						<div onMouseOverCapture = {this.onMouseOver} onMouseLeave={this.onMouseLeave}  className="carousel-div" style={{width:carousel_width_div+'em'}}>
+							<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+							<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+							<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		)

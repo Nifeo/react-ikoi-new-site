@@ -8,6 +8,9 @@ import Bath from '../image/bathspa-new.jpg';
 import Massage from '../image/massage.jpg';
 import Facial from '../image/facial.jpg';
 import Faiclogo from '../image/faiclogo.jpg';
+import Addon1 from '../image/addon-2.jpg';
+import Addon2 from '../image/add-on-3.jpg';
+import Addon3 from '../image/sauna.jpg';
 
 
 
@@ -27,9 +30,9 @@ const HomePage = () =>(
 		<div className="one_section-wrap">
 			<div id="background_video-wrap">
 				<iframe id="video" src="https://youtube.com/embed/W2LH54fHkKo?loop=1&&autoplay=0&&controls=0&&showinfo=0&&playlist=W2LH54fHkKo" frameBorder="0"></iframe>
-			</div>
-			<div className="text-v_block_left">
-				<h5>ikoI JAPANESE DAY SPA</h5>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
 			</div>
 			<div id="description-wrap">
 				<div id="description-div">
@@ -109,13 +112,37 @@ const HomePage = () =>(
 		<div className="one_section-wrap">
 			<div style={{"width":56+"em", "margin":"0 auto"}}>
 				<Carousel width={50} code={3} border_style="lt"/><br/>
-			</div>
-			<div style={{"width":51+"em", "margin":"0 auto"}}>
 				<img style={{"float":"left"}} alt="" src={Faiclogo}></img>
 				<div>
 					<h5>Enzyme Spa & Sothys Seasonal Facia</h5>
 					<p>It’s the tranquil Japanese atmosphere and specialised treatments that makes ikoi Spa different from the rest. We work with a wide range of health and beauty traditions and only use the highest quality products.</p>
 					<buttom className="view_detail-but">View Details</buttom><br/>
+				</div>
+			</div>
+		</div>
+		<div className="one_section-wrap"  style={{"position":"relative","top":"-30em"}}>
+			<div className="addon-wrap" style={{"background-image":"url("+Addon1+")"}}>
+				<div className="addon-div">
+					<div className="addon_description_text">
+						<h5>Sauna</h5>
+						<a className="button_style2">View Detail</a>
+					</div>
+				</div>
+			</div>
+			<div className="addon-wrap"  style={{"background-image":"url("+Addon2+")"}}>
+				<div className="addon-div">
+					<div className="addon_description_text">
+						<h5>Head & Scalp Massage</h5>
+						<a className="button_style2">View Detail</a>
+					</div>
+				</div>
+			</div>
+			<div className="addon-wrap" style={{"background-image":"url("+Addon3+")"}}>
+				<div className="addon-div">
+					<div className="addon_description_text">
+						<h5>Back Exfoliation</h5>
+						<a className="button_style2">View Detail</a>
+					</div>
 				</div>
 			</div>
 		</div>
