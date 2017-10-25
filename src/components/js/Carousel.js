@@ -1,21 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import '../css/style-carousel.css';
 import Pool from '../image/pslider1.jpg';
 
 export default class Carousel extends React.Component{
-	onMouseOver(){
-		let list = document.getElementsByClassName("mouse-event");
-		for(let x =0; x < list.length; x++){
-			document.getElementsByClassName("mouse-event")[x].style.animationPlayState="paused";
-		}
-	}
-	
-	onMouseLeave(){
-		let list = document.getElementsByClassName("mouse-event");
-		for(let x =0; x < list.length; x++){
-			document.getElementsByClassName("mouse-event")[x].style.animationPlayState="running";
-		}
-	}
+
 	
 	render(){
 		let item_width = this.props.width;
@@ -47,14 +36,17 @@ export default class Carousel extends React.Component{
 		
 		let border = 'carousel_border_'+this.props.border_style;
 		let viewPoint = "carousel_viewpoint clearPosition_"+this.props.border_style;
+		
+
+		
 		return(
 			<div className="carousel_wrapper">			
 				<div className ={border} style={{width:viewpoint_width+'em'}}>
 					<div className = {viewPoint} style={{width:viewpoint_width+'em'}}>
-						<div onMouseOverCapture = {this.onMouseOver} onMouseLeave={this.onMouseLeave}  className="carousel-div" style={{width:carousel_width_div+'em'}}>
-							<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
-							<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
-							<img className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+						<div onMouseOverCapture = {()=>{this.refs.carouselItem.style.animationPlayState="paused";this.refs.carouselItem1.style.animationPlayState="paused";this.refs.carouselItem2.style.animationPlayState="paused";}} onMouseLeave={()=>{this.refs.carouselItem.style.animationPlayState="running";this.refs.carouselItem1.style.animationPlayState="running";this.refs.carouselItem2.style.animationPlayState="running";}}  className="carousel-div" style={{width:carousel_width_div+'em'}}>
+							<img ref="carouselItem" className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+							<img ref="carouselItem1" className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
+							<img ref="carouselItem2" className="mouse-event carousel_item carousel_viewpoint" style={style} src={Pool}></img>
 						</div>
 					</div>
 				</div>
