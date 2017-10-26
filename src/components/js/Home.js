@@ -4,6 +4,8 @@ import Content from './Contents';
 import HomePage from './Contents';
 import About from './Contents';
 import Header from './Header';
+import Footer from './Footer';
+
 
 class Home extends React.Component{
 	render(){
@@ -12,6 +14,7 @@ class Home extends React.Component{
 			<div>
 				<Header />
 				<Content />
+				<Footer />
 			</div>
 			</Router>
 		)

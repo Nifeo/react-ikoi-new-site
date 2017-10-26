@@ -2,6 +2,7 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 import Carousel from './Carousel';
 import '../css/style-contents.css';
+import '../css/style-footer.css';
 import AboutImage from '../image/about-image.jpg';
 import EnzymeSpa from '../image/pimg.jpg';
 import Bath from '../image/bathspa-new.jpg';
@@ -11,6 +12,7 @@ import Faiclogo from '../image/faiclogo.jpg';
 import Addon1 from '../image/addon-2.jpg';
 import Addon2 from '../image/add-on-3.jpg';
 import Addon3 from '../image/sauna.jpg';
+import About_banner from '../image/aboutbanner.jpg';
 
 
 
@@ -28,8 +30,8 @@ class Content extends React.Component{
 const HomePage = () =>(
 	<div className="body-wrap">
 		<div className="one_section-wrap">
-			<div id="background_video-wrap">
-				<iframe id="video" src="https://youtube.com/embed/W2LH54fHkKo?loop=1&&autoplay=0&&controls=0&&showinfo=0&&playlist=W2LH54fHkKo" frameBorder="0"></iframe>
+			<div className="background_video-wrap">
+				<iframe className="video" src="https://youtube.com/embed/W2LH54fHkKo?loop=1&&autoplay=0&&controls=0&&showinfo=0&&playlist=W2LH54fHkKo" frameBorder="0"></iframe>
 				<div className="vertical_block-div">
 					<p>ikoI JAPANESE DAY SPA</p>
 				</div>
@@ -145,13 +147,31 @@ const HomePage = () =>(
 					</div>
 				</div>
 			</div>
-		</div>
+			<div>
+				<h2 className="addon-vertical_text">Add Ons</h2>
+			</div>
+				<buttom className="view_detail-but_noborder">View Details</buttom>
+			</div>
 	</div>
 )
 
 const About = () =>(
-	<div>
-		<h1>about success</h1>
+	<div className="body-wrap">
+		<div className="one_section-wrap">
+			<div className="background_video-wrap">
+				<img className="video"src={About_banner}></img>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
+			</div>
+			<div id="description-wrap">
+				<div id="description-div">
+					<h5>ikoi Enzyme therapy & Japanese day spa</h5>
+					<h1>Treat yourself to a<br/>truly unique spa experience Our Treatments</h1>
+					<buttom className="buttom_style1">Our Treatments</buttom>
+				</div>
+			</div>
+		</div>
 	</div>
 )
 
