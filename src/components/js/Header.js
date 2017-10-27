@@ -11,10 +11,10 @@ class Header extends React.Component{
 					<li><Link to="/">HOME</Link></li>
 					<li><Link to="/about">ABOUT</Link></li>
 					<li><Link to="/treatments">TREATMENTS</Link></li>
-					<li><Link to="/sprcial_offers">SPECIAL OFFERS</Link></li>
-					<li><Link to="/harmony_package">HARMONY PACKAGES</Link></li>
+					<li><Link to="/spcial_offers">SPECIAL OFFERS</Link></li>
+					<li><Link to="/harmony_packages">HARMONY PACKAGES</Link></li>
 					<li><Link to="/gallery">GALLERY</Link></li>
-					<li className="menu-last_item"><Link to="/contacts">CONTACTS</Link></li>
+					<li className="menu-last_item"><Link to="/contact">CONTACTS</Link></li>
 				</ul>
 				<div id="book_now-div">
 					<p className="middle_line book_now">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>

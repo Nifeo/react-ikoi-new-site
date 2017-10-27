@@ -22,11 +22,16 @@ class Content extends React.Component{
 			<div>			
 				<Route exact path="/" component={HomePage} />
 				<Route path="/about" component={About} />
+				<Route path="/treatments" component={Treatments} />
+				<Route path="/spcial_offers" component={Spcial} />
+				<Route path="/harmony_packages" component={Harmony} />
+				<Route path="/gallery" component={Gallery} />
+				<Route path="/contact" component={Contact} />
+				<Route path="/book_now" component={Booknow} />
 			</div>
 		)
 	};
 }
-
 const HomePage = () =>(
 	<div className="body-wrap">
 		<div className="one_section-wrap">
@@ -166,11 +171,124 @@ const About = () =>(
 			</div>
 			<div id="description-wrap">
 				<div id="description-div">
-					<h5>ikoi Enzyme therapy & Japanese day spa</h5>
-					<h1>Treat yourself to a<br/>truly unique spa experience Our Treatments</h1>
+					<h1>About us</h1>
 					<buttom className="buttom_style1">Our Treatments</buttom>
 				</div>
 			</div>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
+		</div>
+	</div>
+)
+const Treatments = () =>(
+		<div className="body-wrap">
+		<div className="one_section-wrap">
+			<div className="background_video-wrap">
+				<img className="video"src={About_banner}></img>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
+			</div>
+			<div id="description-wrap">
+				<div id="description-div">
+					<h1>About us</h1>
+					<buttom className="buttom_style1">Our Treatments</buttom>
+				</div>
+			</div>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
+		</div>
+	</div>
+)
+const Spcial = () =>(
+	<div className="body-wrap">
+		<div className="one_section-wrap">
+			<div className="background_video-wrap">
+				<img className="video"src={About_banner}></img>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
+			</div>
+			<div id="description-wrap">
+				<div id="description-div">
+					<h1>About us</h1>
+					<buttom className="buttom_style1">Our Treatments</buttom>
+				</div>
+			</div>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
+		</div>
+	</div>
+)
+const Harmony = () =>(
+		<div className="body-wrap">
+		<div className="one_section-wrap">
+			<div className="background_video-wrap">
+				<img className="video"src={About_banner}></img>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
+			</div>
+			<div id="description-wrap">
+				<div id="description-div">
+					<h1>About us</h1>
+					<buttom className="buttom_style1">Our Treatments</buttom>
+				</div>
+			</div>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
+		</div>
+	</div>
+)
+
+const Gallery = () =>(
+		<div className="body-wrap">
+		<div className="one_section-wrap">
+			<div className="background_video-wrap">
+				<img className="video"src={About_banner}></img>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
+			</div>
+			<div id="description-wrap">
+				<div id="description-div">
+					<h1>About us</h1>
+					<buttom className="buttom_style1">Our Treatments</buttom>
+				</div>
+			</div>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
+		</div>
+	</div>
+)
+
+const Contact = () =>(
+		<div className="body-wrap">
+		<div className="one_section-wrap">
+			<h1>somnty</h1>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
+		</div>
+	</div>
+)
+
+const Booknow = () =>(
+		<div className="body-wrap">
+		<div className="one_section-wrap">
+			<div className="background_video-wrap">
+				<img className="video"src={About_banner}></img>
+				<div className="vertical_block-div">
+					<p>ikoI JAPANESE DAY SPA</p>
+				</div>
+			</div>
+			<div id="description-wrap">
+				<div id="description-div">
+					<h1>About us</h1>
+					<buttom className="buttom_style1">Our Treatments</buttom>
+				</div>
+			</div>
+		</div>
+		<div style={{"margin-bottom":"30em"}} className="one_section-wrap">
 		</div>
 	</div>
 )
