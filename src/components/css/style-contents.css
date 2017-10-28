@@ -29,12 +29,17 @@ h5{
 }
 .background_video-wrap{
 	position:relative;
+	padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
 }
 .video{
-	margin-left: 25%;
-	height:35.18em;
-	max-width:62.5em;
-	width:71%;
+	height: 73%;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 140px;
 }
 .buttom_style1{
 	padding:1em;
